@@ -8,10 +8,10 @@ import os
 # ------------------------
 # 비밀번호 보호
 # ------------------------
-password = st.text_input("🔒 비밀번호 입력", type="password")
+#password = st.text_input("🔒 비밀번호 입력", type="password")
 
-if password != os.getenv("APP_PASSWORD"):
-    st.stop()
+#if password != os.getenv("APP_PASSWORD"):
+#    st.stop()
 
 # ------------------------
 # VWAP 계산
