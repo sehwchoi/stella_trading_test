@@ -79,14 +79,30 @@ st.title("📈 AI Trading Dashboard")
 # 섹터 선택
 sector = st.selectbox(
     "섹터 선택",
-    ["AI", "Robotics", "Manufacturing"]
+    ["AI", "Robotics", "Manufacturing", "Telecom"]
 )
 
 # 섹터별 종목
 sector_stocks = {
-    "AI": ["NVDA", "AMD", "MSFT", "GOOGL", "META", "TSM", "AVGO", "PLTR", "SNOW", "AI"],
-    "Robotics": ["ISRG", "ABB", "FANUY", "ROK", "TER", "PATH", "SYM", "IRBT", "ZBRA", "CGNX"],
-    "Manufacturing": ["CAT", "DE", "HON", "GE", "BA", "MMM", "ETN", "EMR", "ITW", "PH"]
+    "AI": [
+        "NVDA", "AMD", "MSFT", "GOOGL", "META", "TSM", "AVGO", "PLTR", "SNOW", "AI",
+        "CRM", "ADBE", "ORCL", "INTC", "MU", "NOW", "DDOG", "MDB", "ZS", "NET"
+    ],
+
+    "Robotics": [
+        "ISRG", "ABB", "FANUY", "ROK", "TER", "PATH", "SYM", "IRBT", "ZBRA", "CGNX",
+        "OMCL", "NVMI", "AEHR", "ONTO", "AMBA", "LSCC", "COHU", "KLIC", "MKSI", "ENTG"
+    ],
+
+    "Manufacturing": [
+        "CAT", "DE", "HON", "GE", "BA", "MMM", "ETN", "EMR", "ITW", "PH",
+        "CMI", "PCAR", "ROK", "DOV", "XYL", "AME", "FTV", "IR", "NDSN", "SWK"
+    ],
+
+    "Telecom": [
+        "VZ", "T", "TMUS", "CHTR", "CMCSA", "LUMN", "CCI", "AMT", "SBAC", "DISH",
+        "ATUS", "FYBR", "IDCC", "CABO", "SHEN", "TDS", "USM", "SATS", "IRDM", "ASTS"
+    ]
 }
 
 stocks = sector_stocks[sector]
